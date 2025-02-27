@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tahlilan App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Tahlilan Event Calculator</h1>
+    <form id="tahlilanForm">
+      <label for="deathDate">Date of Death:</label>
+      <input type="date" id="deathDate" required>
+      <button type="submit">Calculate</button>
+    </form>
+    <div id="results" class="hidden">
+      <h2>Tahlilan Event Dates</h2>
+      <ul id="eventList"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
