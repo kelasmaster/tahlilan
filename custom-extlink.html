@@ -30,5 +30,21 @@ const script = document.createElement('script');
 script.src = 'https://www.geocities.ws/wahyudi/tool/tahlilan/script.js';
 document.body.appendChild(script);
   </script>
+  <script>
+    javascript:(function () {
+  const allowedUrls = [
+    'https://www.geocities.ws/wahyudi',
+    'https://kelasmaster.github.io/'
+  ];
+  const currentUrl = window.location.href;
+
+  if (!allowedUrls.some(url => currentUrl.startsWith(url))) {
+    alert('❌ This script only works on allowed URLs!');
+    return;
+  }
+
+  setTimeout(() => div.remove(), 3000); // Remove after 3 seconds
+})();
+  </script>
 </body>
 </html>
